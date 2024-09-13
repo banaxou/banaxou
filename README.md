@@ -8,6 +8,6 @@
 ![stat](https://github-readme-stats.vercel.app/api?username=banaxou-dev&show_icons=true&theme=radical)  
 ![langages](https://github-readme-stats.vercel.app/api/top-langs/?username=banaxou&layout=compact&theme=radical)
 
-📫 **network** : ..
+📫 **network**  ..
 
 ---
