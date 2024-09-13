@@ -1,13 +1,14 @@
----
 
-### [ovax] 
 
-💻 **dev python** spécialisé dans la création d'outils **OSINT (Open Source Intelligence)**
+**dev | ovax**
 
-📊 **Stats gitHub** :
-![stat](https://github-readme-stats.vercel.app/api?username=banaxou-dev&show_icons=true&theme=radical)  
-![langages](https://github-readme-stats.vercel.app/api/top-langs/?username=banaxou&layout=compact&theme=radical)
+💻 **Développeur Python**  **OSINT (Open Source Intelligence)**
 
-📫 **network**  ..
+📊 **Statistiques GitHub** :  
+![Stats GitHub](https://github-readme-stats.vercel.app/api?username=banaxou-dev&show_icons=true&theme=radical)  
+![Langages ](https://github-readme-stats.vercel.app/api/top-langs/?username=banaxou&layout=compact&theme=radical)
 
----
+📫 **Réseaux sociaux** :  [instagram](https://instagram.com/banaxou)
+
+
+
