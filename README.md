@@ -6,8 +6,8 @@
 
 📊 **Stats gitHub** :
 
-![Stats GitHub](https://github-readme-stats.vercel.app/api?username=banaxou&show_icons=true&theme=dark)  
-![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=banaxou&layout=compact&theme=dark)
+(https://github-readme-stats.vercel.app/api?username=banaxou&show_icons=true&theme=dark)  
+(https://github-readme-stats.vercel.app/api/top-langs/?username=banaxou&layout=compact&theme=dark)
 
 📫 **Réseaux sociaux** : ..
 
