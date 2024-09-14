@@ -3,7 +3,7 @@
 - **dev | ovax**
 
 
-💻 **Développeur Python**  **OSINT (Open Source Intelligence)** 
+💻 **Développeur python**  **OSINT (open source intelligence) & pentest** 
 
 
 📊  **Statistiques GitHub** :  
