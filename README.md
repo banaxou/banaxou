@@ -3,7 +3,7 @@
  I'm Ovax</h1>
 <p>i love lain 💗<p/>
 <img src="https://media.tenor.com/1QlojlC2nVkAAAAi/lain.gif" width="120px" height="120">
-<img src="https://media.tenor.com/A-Cc_uGZVQEAAAAi/lain-serial-experiments-lain.gif" width="120px" height="120"
+<img src="https://media.tenor.com/A-Cc_uGZVQEAAAAi/lain-serial-experiments-lain.gif" width="120px" height="120">
 
 
 ---
