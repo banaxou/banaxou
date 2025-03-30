@@ -15,6 +15,9 @@
 - 📫 Contact me: [Instagram](https://instagram.com/banaxou)
 
 ---
+### 💻 Distributions :
+
+[![Distribution](https://skillicons.dev/icons?i=windows,debian,kali)](https://skillicons.dev) <br/>
 
 <h2>🔧 Languages and Tools</h2>
 
