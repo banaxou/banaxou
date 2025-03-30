@@ -17,7 +17,8 @@
 ---
 ### 💻 Distributions :
 
-[![Distribution](https://skillicons.dev/icons?i=windows,debian,kali)](https://skillicons.dev) <br/>
+[![Distribution](https://skillicons.dev/icons?i=windows,mint,kali,ubuntu,debian)](https://skillicons.dev)  
+![Fedora](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg){width=48}
 
 ---
 <h2>🔧 Languages and Tools</h2>
