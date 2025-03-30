@@ -13,13 +13,6 @@
 - 🎉 I have **16 old year**
 - 🌷 I'm a passionate **Python developer**, specializing in **cybersecurity,OSINT** and **Pentesting**
 - 📫 Contact me: [Instagram](https://instagram.com/banaxou)
-
----
-### 💻 Distributions :
-
-[![Distribution](https://skillicons.dev/icons?i=windows,kali,debian)](https://skillicons.dev)  
-![Fedora](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg)
-
 ---
 <h2>🔧 Languages and Tools</h2>
 
