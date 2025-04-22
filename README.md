@@ -10,7 +10,7 @@
 
 <h2>☄️ About Me</h2>
 
-- 🎉 I have **16 old year**
+- 🎉 I'm **16 years old**
 - 🌷 I'm a passionate **Python developer**, specializing in **cybersecurity,OSINT** and **Pentesting**
 - 📫 Contact me: [Instagram](https://instagram.com/banaxou)
 ---
