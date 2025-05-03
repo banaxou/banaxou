@@ -59,6 +59,32 @@
 </p>
 
 ---
+
+![Coming Soon](https://img.shields.io/badge/OSINT%20Tool-Coming%20Sunday-blueviolet?style=for-the-badge&logo=github)
+
+## **Soon – by Ovax**
+
+<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="banaxou" height="30" width="40" />
+
+A new **Instagram OSINT tool** is coming this Sunday on my GitHub profile
+Stay tuned
+
+
+### **Your donations help fund my open source projects and major projects as well as useful tools and services:**
+
+### Ethereum  
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg" width="20">  
+
+[0x190feaDcd1b19F0bc3Faa39A0d5904E072CCA627](https://etherscan.io/address/0x190feaDcd1b19F0bc3Faa39A0d5904E072CCA627)
+
+---
+
+### Bitcoin  
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" width="20"> 
+
+[bc1qs2sf3hwz9a72vk6yd2cnahzfpequlw67k8hd5c](https://blockchair.com/bitcoin/address/bc1qs2sf3hwz9a72vk6yd2cnahzfpequlw67k8hd5c)
+
 <p align="center">
 <img src="https://media.tenor.com/wv7Rwz7ePHQAAAAi/lain-iwakura.gif"/>
 </p>
