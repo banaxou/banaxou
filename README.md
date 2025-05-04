@@ -60,7 +60,7 @@
 
 ---
 
-![Coming Soon](https://img.shields.io/badge/OSINT%20Tool-Coming%20Sunday-blueviolet?style=for-the-badge&logo=github)
+![Coming Soon](https://img.shields.io/badge/OSINT%20Tool-Coming%20monday-blueviolet?style=for-the-badge&logo=github)
 
 ## **Soon – by Ovax 22h00 🇫🇷**
 
