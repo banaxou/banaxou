@@ -52,9 +52,9 @@
 
 ---
 
-<h2>💬 reddit | veloxia</h2>
+## **💬 reddit | veloxia**
 
-<p>Join <a href="https://reddit.com/r/veloxia" target="_blank">r/veloxia</a> the community for OSINT projects and support</p>
+**Join [r/veloxia](https://reddit.com/r/veloxia) the community for OSINT projects and support**
 
 <p align="center">
   <a href="https://reddit.com/r/veloxia" target="_blank">
