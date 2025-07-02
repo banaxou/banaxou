@@ -43,10 +43,22 @@
 
 <p align="left">
   <a href="https://instagram.com/banaxou" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="banaxou" height="30" width="40" />
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="banaxou" height="30" width="40"/>
   </a>
   <a href="https://github.com/banaxou" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="banaxou-dev" height="30" width="40" />
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="banaxou-dev" height="30" width="40"/>
+  </a>
+</p>
+
+---
+
+<h2>💬 reddit | veloxia</h2>
+
+<p>Join <a href="https://reddit.com/r/veloxia" target="_blank">r/veloxia</a> the community for OSINT projects and support</p>
+
+<p align="center">
+  <a href="https://reddit.com/r/veloxia" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/reddit.svg" alt="Reddit Logo" width="40"/>
   </a>
 </p>
 
