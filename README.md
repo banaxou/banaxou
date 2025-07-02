@@ -52,7 +52,7 @@
 
 ---
 
-## **💬 reddit | veloxia**
+## **💬 reddit | VELOXIΛ**
 
 **Join [r/veloxia](https://reddit.com/r/veloxia) the community for OSINT projects and support**
 
