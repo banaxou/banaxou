@@ -14,7 +14,7 @@
 - 🌷 I'm a passionate **Python developer**, specializing in **cybersecurity,OSINT** and **Pentesting**
 - 📫 Contact me: [Instagram](https://instagram.com/banaxou)
 ---
-<h2>🔧 Languages and Tools</h2>
+<h2>🔧 Languages os and Tools</h2>
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
