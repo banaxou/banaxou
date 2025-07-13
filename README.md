@@ -16,18 +16,13 @@
 ---
 <h2>🔧 Languages os and Tools</h2>
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/>
- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-</p>
+![My Skills](https://skillicons.dev/icons?i=windows,linux,arch,javascript,python,bash,git,vscode)
 
 ---
+![440062037-009ba9b0-d64f-45c6-85d4-274209a437d0](https://github.com/user-attachments/assets/e716930f-c53d-4354-acc1-ccef6e171a63)
 
-<img src="https://media0.giphy.com/media/Basrh159dGwKY/giphy.gif?cid=6c09b952oea308xpjz2ohhdmeosbal9wq8k17nru30wnap13&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"/>
+
+
 
 <h2>📊 GitHub Stats</h2>
 
