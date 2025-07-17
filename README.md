@@ -19,9 +19,10 @@
 ![My Skills](https://skillicons.dev/icons?i=windows,linux,arch,javascript,python,bash,git,vscode)
 
 ---
+
 <p align="center"
 
-<img src="https://github.com/user-attachments/assets/e716930f-c53d-4354-acc1-ccef6e171a63" width="120">
+<img src="https://github.com/user-attachments/assets/e716930f-c53d-4354-acc1-ccef6e171a63" width="120" />
 
 </p>
 
