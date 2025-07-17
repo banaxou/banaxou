@@ -19,8 +19,13 @@
 ![My Skills](https://skillicons.dev/icons?i=windows,linux,arch,javascript,python,bash,git,vscode)
 
 ---
-![440062037-009ba9b0-d64f-45c6-85d4-274209a437d0](https://github.com/user-attachments/assets/e716930f-c53d-4354-acc1-ccef6e171a63)
+<p align="center"
 
+<img src="https://github.com/user-attachments/assets/e716930f-c53d-4354-acc1-ccef6e171a63" width="120">
+
+</p>
+
+---
 
 
 
