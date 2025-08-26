@@ -61,14 +61,6 @@
 
 ---
 
-<h2>🏆 GitHub Trophies</h2>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=banaxou&theme=radical" alt="GitHub Trophies"/>
-</p>
-
----
-
 <p align="center">
 <img src="https://media.tenor.com/wv7Rwz7ePHQAAAAi/lain-iwakura.gif"/>
 </p>
