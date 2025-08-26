@@ -21,6 +21,8 @@
 ---
 <h2> 💠 ctf </h2>
 
+[![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-4CAF50?style=for-the-badge&logo=hackthebox&logoColor=white)](https://app.hackthebox.com/profile/overview)
+
 ---
 
 ![gif](https://c.tenor.com/r77Sc4J25JMAAAAd/tenor.gif)
