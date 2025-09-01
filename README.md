@@ -25,13 +25,10 @@
 
 ---
 
-![stars](https://github-readme-activity-graph.vercel.app/graph?username=banaxou&custom_title=ovax's%20GitHub%20Activity%20Graph&bg_color=0D0217&color=F0A3FF&line=FF5BBE&point=FFFFFF&area=true&title_color=FF77FF&hide_border=true&border_radius=15)
-
----
-
-
-
 <h2>📊 GitHub Stats</h2>
+
+![a](https://github-readme-activity-graph.vercel.app/graph?username=banaxou&custom_title=ovax's%20GitHub%20Activity%20Graph&bg_color=0D0217&color=F0A3FF&line=FF5BBE&point=FFFFFF&area=true&title_color=FF77FF&hide_border=true&border_radius=15)
+
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=banaxou&show_icons=true&theme=radical" alt="GitHub Stats"/>
