@@ -25,7 +25,7 @@
 
 ---
 
-![gif](https://c.tenor.com/r77Sc4J25JMAAAAd/tenor.gif)
+![stars](https://github-readme-activity-graph.vercel.app/graph?username=banaxou&custom_title=ovax_goat's%20GitHub%20Activity%20Graph&bg_color=0D0217&color=F0A3FF&line=FF5BBE&point=FFFFFF&area=true&title_color=FF77FF&hide_border=true&border_radius=15)
 
 ---
 
