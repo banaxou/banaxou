@@ -53,18 +53,6 @@
 
 ---
 
-## **💬 reddit | VELOXIΛ**
-
-**Join [r/veloxia](https://reddit.com/r/veloxia) the community for OSINT projects and support**
-
-<p align="center">
-  <a href="https://reddit.com/r/veloxia" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/reddit.svg" alt="Reddit Logo" width="40"/>
-  </a>
-</p>
-
----
-
 <p align="center">
 <img src="https://media.tenor.com/wv7Rwz7ePHQAAAAi/lain-iwakura.gif"/>
 </p>
