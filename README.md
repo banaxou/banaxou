@@ -16,7 +16,7 @@
 ---
 <h2>🔧 Languages os and Tools</h2>
 
-![My Skills](https://skillicons.dev/icons?i=windows,linux,kali,arch,python,cpp,bash,git,vscode)
+![My Skills](https://skillicons.dev/icons?i=windows,linux,kali,arch,python,cpp,javascript,bash,git,vscode)
 
 ---
 <h2> 🚩 ctf </h2>
