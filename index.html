@@ -1,29 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>soon</title>
-    <style>
-        body {
-            background-color: #8e2aeb;
-        }
-        .box {
-            height: 200px;
-            width: 200px;
-            box-shadow: 0 4px 8px #00000033;
-            border-radius: 13px;
-            background: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 50px auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ovax Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url("rukia.gif") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #eaeaea;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(142, 42, 235, 0.65);
+      padding: 50px 70px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.7);
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
+
+    .overlay img.profile {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #ccc;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      color: #fff;
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 1.1em;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    .links {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1em;
+      transition: 0.3s;
+      opacity: 0.9;
+    }
+
+    .links a:hover {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+      opacity: 0.75;
+      transition: 0.3s;
+    }
+
+    .links a:hover .icon {
+      opacity: 1;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 1em;
+      color: #fff;
+      letter-spacing: 1px;
+      opacity: 0.85;
+    }
+  </style>
 </head>
 <body>
-    <div class="box">
-        <h2>Come back soon</h2>
+
+  <div class="overlay">
+    <img src="icon.jpg" alt="Profile picture" class="profile">
+    <h1>ovax</h1>
+    <p>pentest & dev</p>
+
+    <div class="links">
+
+      <a href="https://github.com/banaxou" target="_blank">
+        <img src="github.png" title="github icons" class="icon">
+        GitHub
+      </a>
+
+      <a href="https://instagram.com/banaxou" target="_blank">
+        <img src="instagram.png" class="icon">
+        Instagram
+      </a>
+
+      <a href="https://etherscan.io/address/0x4cc818bc2C4291CEa8117D9F8D8417EE054fEA58" target="_blank">
+         <img src="ethereum.png" class="icon">
+        eth 
+      </a>
+
+      <a href="https://solscan.io/account/BVMkqwkMjtTNmD5spKayhYeb6JUfmReGxGaD4kcetXp2" target="_blank">
+        <img src="coins.png" class="icon">
+        sol 
+      </a>
+
     </div>
+  </div>
+
+  <div class="footer">
+     i working on hostagram 2.0 and infonyx 
+  </div>
+
 </body>
 </html>
