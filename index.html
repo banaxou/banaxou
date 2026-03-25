@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ovax Portfolio</title>
+
   <style>
     body {
       margin: 0;
@@ -25,6 +26,8 @@
       box-shadow: 0 0 30px rgba(0,0,0,0.7);
       text-align: center;
       backdrop-filter: blur(6px);
+      max-width: 500px;
+      width: 90%;
     }
 
     .overlay img.profile {
@@ -86,6 +89,19 @@
       opacity: 1;
     }
 
+    /* Spotify */
+    .spotify {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .spotify iframe {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+    }
+
     .footer {
       position: absolute;
       bottom: 20px;
@@ -98,43 +114,54 @@
     }
   </style>
 </head>
+
 <body>
 
 <!-- hellow is ovaxou ! -->
 
-  <div class="overlay">
-    <img src="icon.jpg" alt="Profile picture" class="profile">
-    <h1>ovax</h1>
-    <p>pentest & dev</p>
+<div class="overlay">
+  <img src="icon.jpg" alt="Profile picture" class="profile">
 
-    <div class="links">
+  <h1>ovax</h1>
+  <p>pentest & dev</p>
 
-      <a href="https://github.com/banaxou" target="_blank">
-        <img src="github.png" title="github icons" class="icon">
-        GitHub
-      </a>
+  <div class="links">
+    <a href="https://github.com/banaxou" target="_blank">
+      <img src="github.png" class="icon">
+      GitHub
+    </a>
 
-      <a href="https://instagram.com/banaxou" target="_blank">
-        <img src="instagram.png" class="icon">
-        Instagram
-      </a>
+    <a href="https://instagram.com/banaxou" target="_blank">
+      <img src="instagram.png" class="icon">
+      Instagram
+    </a>
 
-      <a href="https://etherscan.io/address/0x4cc818bc2C4291CEa8117D9F8D8417EE054fEA58" target="_blank">
-         <img src="ethereum.png" class="icon">
-        eth 
-      </a>
+    <a href="https://etherscan.io/address/0x4cc818bc2C4291CEa8117D9F8D8417EE054fEA58" target="_blank">
+      <img src="ethereum.png" class="icon">
+      eth
+    </a>
 
-      <a href="https://solscan.io/account/BVMkqwkMjtTNmD5spKayhYeb6JUfmReGxGaD4kcetXp2" target="_blank">
-        <img src="sol.png" class="icon">
-        sol 
-      </a>
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5IjlxvegOUD9ANTHwNXosm?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
+    <a href="https://solscan.io/account/BVMkqwkMjtTNmD5spKayhYeb6JUfmReGxGaD4kcetXp2" target="_blank">
+      <img src="sol.png" class="icon">
+      sol
+    </a>
   </div>
 
-  <div class="footer">
-     i working on hostagram 2.0 and infonyx
+  <div class="spotify">
+    <iframe 
+      src="https://open.spotify.com/embed/track/5IjlxvegOUD9ANTHwNXosm?theme=0"
+      height="152"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
   </div>
+
+</div>
+
+<div class="footer">
+  i working on hostagram 2.0 and infonyx
+</div>
 
 </body>
 </html>
