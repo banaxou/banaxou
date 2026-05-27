@@ -3,6 +3,21 @@
  I'm Ovax</h1>
 
 # *discord server soon 🏴*
+Progress: 80%
+
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱
+# *hostagram V2 🌸* (osint instagram)
+Progress: 48%
+
+▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱
+
+# *s???mail V1 🌱* (osint mail)
+
+Progress: 10%
+
+▰▱▱▱▱▱▱▱▱▱
+
+
 <p>i love lain 💗 <p/>
 <img src="https://media.tenor.com/1QlojlC2nVkAAAAi/lain.gif" width="120px" height="120">
 <img src="https://media.tenor.com/A-Cc_uGZVQEAAAAi/lain-serial-experiments-lain.gif" width="120px" height="120">
