@@ -7,16 +7,14 @@ Progress: 80%
 
 ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱
 # *hostagram V2 🌸* (osint instagram)
-Progress: 48%
+Progress: 50%
 
-▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱
 
 # *s???mail V1 🌱* (osint mail)
 
-Progress: 10%
-
-▰▱▱▱▱▱▱▱▱▱
-
+Progress: 15%
+▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱
 
 <p>i love lain 💗 <p/>
 <img src="https://media.tenor.com/1QlojlC2nVkAAAAi/lain.gif" width="120px" height="120">
