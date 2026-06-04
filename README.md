@@ -7,7 +7,7 @@ Progress: 80%
 
 ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱
 # *hostagram V2 🌸* (osint instagram)
-Progress: 50%
+Progress: 55%
 
 ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱
 
