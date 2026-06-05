@@ -13,8 +13,9 @@ Progress: 55%
 
 # *s???mail V1 🌱* (osint mail)
 
-Progress: 15%
-▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱
+Progress: 50%
+
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱
 
 <p>i love lain 💗 <p/>
 <img src="https://media.tenor.com/1QlojlC2nVkAAAAi/lain.gif" width="120px" height="120">
