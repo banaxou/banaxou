@@ -2,6 +2,8 @@
 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
  I'm Ovax</h1>
 
+
+# *Due to personal reasons lately, I will not be able to continue my projects for the time being (ovax) *
 # *discord server soon 🏴*
 Progress: 80%
 
