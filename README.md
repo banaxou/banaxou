@@ -4,11 +4,11 @@
 
 
 # *discord server soon 🏴*
-Progress: 80%
+Progress: 90%
 
-▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱
 # *hostagram V2 🌸* (osint instagram)
-Progress: 55%
+Progress: 65%
 
 ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱
 
