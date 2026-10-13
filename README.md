@@ -8,7 +8,7 @@
 https://discord.gg/nM69ttf5FQ
 
 # *hostagram V2 🌸* (osint instagram)
-Progress: 65%
+Progress: stop
 
 ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱
 
