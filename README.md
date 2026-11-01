@@ -1,5 +1,4 @@
 <div align="center">
-
 <svg width="720" height="168" viewBox="0 0 720 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ovax">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
@@ -24,14 +23,14 @@
     <animate attributeName="opacity" values="1;0.45;1" dur="2.8s" repeatCount="indefinite"/>
   </circle>
   <circle cx="78" cy="84" r="6" fill="#a259ff"/>
-  <text x="128" y="78" fill="url(#g)" filter="url(#glow)" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="10">OVAX</text>
-  <text x="130" y="112" fill="#c9bfe0" font-family="Consolas, monospace" font-size="15" letter-spacing="3">pentest  ·  osint  ·  python</text>
   <rect x="560" y="70" width="120" height="8" rx="4" fill="#1a1028">
     <rect width="0" height="8" rx="4" fill="#a259ff">
       <animate attributeName="width" values="12;108;40;108" dur="3.6s" repeatCount="indefinite"/>
     </rect>
   </rect>
 </svg>
+
+<h1 align="center">hi <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> I'm Ovax</h1>
 
 <br/>
 
