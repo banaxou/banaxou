@@ -1,215 +1,307 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ovax | pentest & dev</title>
-<link rel="icon" href="https://raw.githubusercontent.com/banaxou/banaxou/main/icon.jpg">
-<style>
-:root {
-  --accent: #a259ff;
-  --accent-glow: rgba(162, 89, 255, 0.55);
-  --bg-overlay: rgba(18, 10, 32, 0.78);
-  --text: #f2eefc;
-  --text-dim: #c9bfe0;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: #0b0710 url("https://raw.githubusercontent.com/banaxou/banaxou/main/rukia.gif") no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: var(--text);
-  padding: 40px 16px 90px;
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.62));
-  z-index: 0;
-}
-.wrap {
-  position: relative;
-  z-index: 1;
-  width: min(920px, 100%);
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 18px;
-  align-items: start;
-}
-.card, .panel {
-  background: var(--bg-overlay);
-  border-radius: 20px;
-  border: 1px solid rgba(162, 89, 255, 0.35);
-  box-shadow: 0 0 40px var(--accent-glow), 0 20px 50px rgba(0,0,0,0.55);
-  backdrop-filter: blur(10px);
-}
-.card {
-  padding: 40px 28px 28px;
-  text-align: center;
-}
-.profile {
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  border: 3px solid var(--accent);
-  object-fit: cover;
-  box-shadow: 0 0 18px var(--accent-glow);
-}
-h1 {
-  font-size: 2.2em;
-  margin: 16px 0 4px;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  color: #fff;
-}
-.tagline {
-  margin: 0;
-  font-family: Consolas, 'Courier New', monospace;
-  color: var(--accent);
-}
-.stars-total {
-  margin: 14px 0 0;
-  font-family: Consolas, monospace;
-  font-size: 0.85em;
-  color: var(--text-dim);
-  letter-spacing: 1px;
-}
-.stars-total b { color: #fff; }
-.links {
-  margin: 22px 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-}
-.links a {
-  color: var(--text);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 0.86em;
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.15);
-  background: rgba(255,255,255,0.04);
-  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-}
-.links a:hover, .links a:focus-visible {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-  background: rgba(162, 89, 255, 0.15);
-}
-.icon { width: 15px; height: 15px; filter: brightness(0); }
-.spotify { margin-top: 22px; }
-.spotify iframe { width: 100%; border-radius: 12px; border: 0; }
-.panel { padding: 22px 22px 8px; }
-.panel h2 {
-  margin: 0 0 14px;
-  font-size: 0.78em;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 650;
-}
-.projects { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
-.project {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 4px 12px;
-  text-decoration: none;
-  color: inherit;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(162, 89, 255, 0.22);
-  background: rgba(0,0,0,0.28);
-  transition: border-color 0.2s ease, transform 0.2s ease;
-}
-.project:hover { border-color: var(--accent); transform: translateY(-2px); }
-.project strong { font-size: 0.98em; }
-.project span { grid-column: 1; color: var(--text-dim); font-size: 0.82em; }
-.star {
-  grid-row: 1 / span 2;
-  grid-column: 2;
-  align-self: center;
-  font-family: Consolas, monospace;
-  font-size: 0.85em;
-  color: #fff;
-  border: 1px solid rgba(162, 89, 255, 0.45);
-  border-radius: 999px;
-  padding: 4px 10px;
-}
-@media (max-width: 760px) {
-  .wrap { grid-template-columns: 1fr; }
-  h1 { font-size: 1.9em; letter-spacing: 4px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ovax | pentest & dev</title>
+
+    <link rel="icon" href="icon.jpg">
+
+    <style>
+        :root {
+            --accent: #a259ff;
+            --accent-glow: rgba(162, 89, 255, 0.55);
+            --bg-overlay: rgba(18, 10, 32, 0.78);
+            --text: #f2eefc;
+            --text-dim: #c9bfe0;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #0b0710 url("rukia.gif") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: var(--text);
+            padding: 40px 16px 90px;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.62));
+            z-index: 0;
+        }
+
+        .wrap {
+            position: relative;
+            z-index: 1;
+            width: min(920px, 100%);
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 18px;
+            align-items: start;
+        }
+
+        .card, .panel {
+            background: var(--bg-overlay);
+            border-radius: 20px;
+            border: 1px solid rgba(162, 89, 255, 0.35);
+            box-shadow: 0 0 40px var(--accent-glow), 0 20px 50px rgba(0,0,0,0.55);
+            backdrop-filter: blur(10px);
+        }
+
+        .card {
+            padding: 40px 28px 28px;
+            text-align: center;
+        }
+
+        .profile {
+            width: 112px;
+            height: 112px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            object-fit: cover;
+            box-shadow: 0 0 18px var(--accent-glow);
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin: 16px 0 4px;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: #fff;
+        }
+
+        .tagline {
+            margin: 0;
+            font-family: Consolas, 'Courier New', monospace;
+            color: var(--accent);
+        }
+
+        .stars-total {
+            margin: 14px 0 0;
+            font-family: Consolas, monospace;
+            font-size: 0.85em;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+        }
+
+        .stars-total b { color: #fff; }
+
+        .links {
+            margin: 22px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+
+        .links a {
+            color: var(--text);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 0.86em;
+            padding: 7px 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.04);
+            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .links a:hover, .links a:focus-visible {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+            background: rgba(162, 89, 255, 0.15);
+        }
+
+        .icon {
+            width: 15px;
+            height: 15px;
+            filter: brightness(0);
+        }
+
+        .spotify { margin-top: 22px; }
+
+        .spotify iframe {
+            width: 100%;
+            border-radius: 12px;
+            border: 0;
+        }
+
+        .panel { padding: 22px 22px 8px; }
+
+        .panel h2 {
+            margin: 0 0 14px;
+            font-size: 0.78em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 650;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .project {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 4px 12px;
+            text-decoration: none;
+            color: inherit;
+            padding: 12px 14px;
+            border-radius: 14px;
+            border: 1px solid rgba(162, 89, 255, 0.22);
+            background: rgba(0,0,0,0.28);
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .project:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .project strong { font-size: 0.98em; }
+
+        .project span {
+            grid-column: 1;
+            color: var(--text-dim);
+            font-size: 0.82em;
+        }
+
+        .star {
+            grid-row: 1 / span 2;
+            grid-column: 2;
+            align-self: center;
+            font-family: Consolas, monospace;
+            font-size: 0.85em;
+            color: #fff;
+            border: 1px solid rgba(162, 89, 255, 0.45);
+            border-radius: 999px;
+            padding: 4px 10px;
+        }
+
+        @media (max-width: 760px) {
+            .wrap { grid-template-columns: 1fr; }
+            h1 { font-size: 1.9em; letter-spacing: 4px; }
+        }
+    </style>
 </head>
+
 <body>
 <div class="wrap">
-  <main class="card">
-    <img src="https://raw.githubusercontent.com/banaxou/banaxou/main/icon.jpg" class="profile" alt="ovax">
-    <h1>ovax</h1>
-    <p class="tagline">pentest & dev</p>
-    <p class="stars-total"><b id="total">220</b> stars on github</p>
-    <ul class="links">
-      <li><a href="https://github.com/banaxou" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/banaxou/banaxou/main/github.png" class="icon" alt="">GitHub</a></li>
-      <li><a href="https://instagram.com/banaxou" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/banaxou/banaxou/main/instagram.png" class="icon" alt="">Instagram</a></li>
-      <li><a href="https://discord.gg/nM69ttf5FQ" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/discord/000000" class="icon" alt="">Discord</a></li>
-      <li><a href="https://tryhackme.com/p/ovaxou" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/tryhackme/000000" class="icon" alt="">TryHackMe</a></li>
-      <li><a href="https://app.hackthebox.com/profile/overview" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/hackthebox/000000" class="icon" alt="">Hack The Box</a></li>
-      <li><a href="https://etherscan.io/address/0x4cc818bc2C4291CEa8117D9F8D8417EE054fEA58" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/banaxou/banaxou/main/ethereum.png" class="icon" alt="">ETH</a></li>
-      <li><a href="https://solscan.io/account/BVMkqwkMjtTNmD5spKayhYeb6JUfmReGxGaD4kcetXp2" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/banaxou/banaxou/main/sol.png" class="icon" alt="">SOL</a></li>
-    </ul>
-    <div class="spotify">
-      <iframe src="https://open.spotify.com/embed/track/1EqlmS4lCRgJWXTKzAnWcu?utm_source=generator&theme=0" height="152" title="Lecteur Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-  </main>
 
-  <section class="panel">
-    <h2>projects</h2>
-    <div class="projects" id="projects">
-      <a class="project" href="https://github.com/banaxou/hostagram" target="_blank" rel="noopener noreferrer">
-        <strong>hostagram</strong><span>osint instagram</span><em class="star" data-repo="hostagram">★ 148</em>
-      </a>
-      <a class="project" href="https://github.com/banaxou/dark-sherlock" target="_blank" rel="noopener noreferrer">
-        <strong>dark-sherlock</strong><span>csint username</span><em class="star" data-repo="dark-sherlock">★ 53</em>
-      </a>
-      <a class="project" href="https://github.com/banaxou/GhubScan" target="_blank" rel="noopener noreferrer">
-        <strong>GhubScan</strong><span>osint user github</span><em class="star" data-repo="GhubScan">★ 11</em>
-      </a>
-      <a class="project" href="https://github.com/banaxou/infonyx" target="_blank" rel="noopener noreferrer">
-        <strong>infonyx</strong><span>ip mail numéro</span><em class="star" data-repo="infonyx">★ 6</em>
-      </a>
-    </div>
-  </section>
+    <main class="card">
+        <img src="icon.jpg" class="profile" alt="ovax">
+
+        <h1>ovax</h1>
+        <p class="tagline">pentest & dev</p>
+
+        <p class="stars-total">
+            <b id="total">220</b> stars on github
+        </p>
+
+        <ul class="links">
+            <li><a href="https://github.com/banaxou" target="_blank" rel="noopener noreferrer"><img src="github.png" class="icon" alt="">GitHub</a></li>
+            <li><a href="https://instagram.com/banaxou" target="_blank" rel="noopener noreferrer"><img src="instagram.png" class="icon" alt="">Instagram</a></li>
+            <li><a href="https://discord.gg/nM69ttf5FQ" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/discord/000000" class="icon" alt="">Discord</a></li>
+            <li><a href="https://tryhackme.com/p/ovaxou" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/tryhackme/000000" class="icon" alt="">TryHackMe</a></li>
+            <li><a href="https://app.hackthebox.com/profile/overview" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/hackthebox/000000" class="icon" alt="">Hack The Box</a></li>
+            <li><a href="https://etherscan.io/address/0x4cc818bc2C4291CEa8117D9F8D8417EE054fEA58" target="_blank" rel="noopener noreferrer"><img src="ethereum.png" class="icon" alt="">ETH</a></li>
+            <li><a href="https://solscan.io/account/BVMkqwkMjtTNmD5spKayhYeb6JUfmReGxGaD4kcetXp2" target="_blank" rel="noopener noreferrer"><img src="sol.png" class="icon" alt="">SOL</a></li>
+        </ul>
+
+        <div class="spotify">
+            <iframe
+                src="https://open.spotify.com/embed/track/1EqlmS4lCRgJWXTKzAnWcu?utm_source=generator&theme=0"
+                height="152"
+                title="Lecteur Spotify"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
+        </div>
+    </main>
+
+    <section class="panel">
+        <h2>projects</h2>
+
+        <div class="projects" id="projects">
+
+            <a class="project" href="https://github.com/banaxou/hostagram" target="_blank" rel="noopener noreferrer">
+                <strong>hostagram</strong>
+                <span>osint instagram</span>
+                <em class="star" data-repo="hostagram">★ 148</em>
+            </a>
+
+            <a class="project" href="https://github.com/banaxou/dark-sherlock" target="_blank" rel="noopener noreferrer">
+                <strong>dark-sherlock</strong>
+                <span>csint username</span>
+                <em class="star" data-repo="dark-sherlock">★ 53</em>
+            </a>
+
+            <a class="project" href="https://github.com/banaxou/GhubScan" target="_blank" rel="noopener noreferrer">
+                <strong>GhubScan</strong>
+                <span>osint user github</span>
+                <em class="star" data-repo="GhubScan">★ 11</em>
+            </a>
+
+            <a class="project" href="https://github.com/banaxou/infonyx" target="_blank" rel="noopener noreferrer">
+                <strong>infonyx</strong>
+                <span>ip mail numéro</span>
+                <em class="star" data-repo="infonyx">★ 6</em>
+            </a>
+
+        </div>
+    </section>
 </div>
+
 <script>
 fetch("https://api.github.com/users/banaxou/repos?per_page=100")
-  .then(function (r) { return r.json(); })
-  .then(function (repos) {
-    if (!Array.isArray(repos)) return;
-    var map = {};
-    var total = 0;
-    repos.forEach(function (repo) {
-      map[repo.name] = repo.stargazers_count || 0;
-      total += repo.stargazers_count || 0;
+    .then(function (r) {
+        if (!r.ok) throw new Error("GitHub API error");
+        return r.json();
+    })
+    .then(function (repos) {
+        if (!Array.isArray(repos)) return;
+
+        var map = {};
+        var total = 0;
+
+        repos.forEach(function (repo) {
+            map[repo.name] = repo.stargazers_count || 0;
+            total += repo.stargazers_count || 0;
+        });
+
+        document.getElementById("total").textContent = total;
+
+        document.querySelectorAll(".star").forEach(function (el) {
+            var n = map[el.dataset.repo];
+
+            if (typeof n === "number") {
+                el.textContent = "★ " + n;
+            }
+        });
+    })
+    .catch(function (error) {
+        console.error("Impossible de récupérer les stars :", error);
     });
-    document.getElementById("total").textContent = total;
-    document.querySelectorAll(".star").forEach(function (el) {
-      var n = map[el.dataset.repo];
-      if (typeof n === "number") el.textContent = "★ " + n;
-    });
-  })
-  .catch(function () {});
 </script>
+
 </body>
 </html>
+```
