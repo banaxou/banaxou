@@ -1,305 +1,660 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ovax | pentest & dev</title>
-
-    <link rel="icon" href="icon.jpg">
-
-    <style>
-        :root {
-            --accent: #a259ff;
-            --accent-glow: rgba(162, 89, 255, 0.55);
-            --bg-overlay: rgba(18, 10, 32, 0.78);
-            --text: #f2eefc;
-            --text-dim: #c9bfe0;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background: #0b0710 url("rukia.gif") no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            color: var(--text);
-            padding: 40px 16px 90px;
-        }
-
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.62));
-            z-index: 0;
-        }
-
-        .wrap {
-            position: relative;
-            z-index: 1;
-            width: min(920px, 100%);
-            display: grid;
-            grid-template-columns: 340px 1fr;
-            gap: 18px;
-            align-items: start;
-        }
-
-        .card, .panel {
-            background: var(--bg-overlay);
-            border-radius: 20px;
-            border: 1px solid rgba(162, 89, 255, 0.35);
-            box-shadow: 0 0 40px var(--accent-glow), 0 20px 50px rgba(0,0,0,0.55);
-            backdrop-filter: blur(10px);
-        }
-
-        .card {
-            padding: 40px 28px 28px;
-            text-align: center;
-        }
-
-        .profile {
-            width: 112px;
-            height: 112px;
-            border-radius: 50%;
-            border: 3px solid var(--accent);
-            object-fit: cover;
-            box-shadow: 0 0 18px var(--accent-glow);
-        }
-
-        h1 {
-            font-size: 2.2em;
-            margin: 16px 0 4px;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            color: #fff;
-        }
-
-        .tagline {
-            margin: 0;
-            font-family: Consolas, 'Courier New', monospace;
-            color: var(--accent);
-        }
-
-        .stars-total {
-            margin: 14px 0 0;
-            font-family: Consolas, monospace;
-            font-size: 0.85em;
-            color: var(--text-dim);
-            letter-spacing: 1px;
-        }
-
-        .stars-total b { color: #fff; }
-
-        .links {
-            margin: 22px 0 0;
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            flex-wrap: wrap;
-            list-style: none;
-            padding: 0;
-        }
-
-        .links a {
-            color: var(--text);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            font-size: 0.86em;
-            padding: 7px 12px;
-            border-radius: 999px;
-            border: 1px solid rgba(255,255,255,0.15);
-            background: rgba(255,255,255,0.04);
-            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-        }
-
-        .links a:hover, .links a:focus-visible {
-            transform: translateY(-2px);
-            border-color: var(--accent);
-            background: rgba(162, 89, 255, 0.15);
-        }
-
-        .icon {
-            width: 15px;
-            height: 15px;
-            filter: brightness(0);
-        }
-
-        .spotify { margin-top: 22px; }
-
-        .spotify iframe {
-            width: 100%;
-            border-radius: 12px;
-            border: 0;
-        }
-
-        .panel { padding: 22px 22px 8px; }
-
-        .panel h2 {
-            margin: 0 0 14px;
-            font-size: 0.78em;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--accent);
-            font-weight: 650;
-        }
-
-        .projects {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 16px;
-        }
-
-        .project {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 4px 12px;
-            text-decoration: none;
-            color: inherit;
-            padding: 12px 14px;
-            border-radius: 14px;
-            border: 1px solid rgba(162, 89, 255, 0.22);
-            background: rgba(0,0,0,0.28);
-            transition: border-color 0.2s ease, transform 0.2s ease;
-        }
-
-        .project:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-        }
-
-        .project strong { font-size: 0.98em; }
-
-        .project span {
-            grid-column: 1;
-            color: var(--text-dim);
-            font-size: 0.82em;
-        }
-
-        .star {
-            grid-row: 1 / span 2;
-            grid-column: 2;
-            align-self: center;
-            font-family: Consolas, monospace;
-            font-size: 0.85em;
-            color: #fff;
-            border: 1px solid rgba(162, 89, 255, 0.45);
-            border-radius: 999px;
-            padding: 4px 10px;
-        }
-
-        @media (max-width: 760px) {
-            .wrap { grid-template-columns: 1fr; }
-            h1 { font-size: 1.9em; letter-spacing: 4px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ovax | pentest & dev</title>
+<link rel="icon" href="icon.jpg">
+<style>
+:root {
+    --accent: #a259ff;
+    --accent-glow: rgba(162,89,255,.35);
+    --bg-overlay: rgba(18,10,32,.78);
+    --text: #f2eefc;
+    --text-dim: #c9bfe0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0b0710 url("rukia.gif") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--text);
+    padding: 40px 16px 90px;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.72));
+    z-index: 0;
+}
+.wrap {
+    position: relative;
+    z-index: 1;
+    width: min(920px,100%);
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 18px;
+    align-items: start;
+}
+.card, .panel {
+    background: var(--bg-overlay);
+    border-radius: 20px;
+    border: 1px solid rgba(162,89,255,.35);
+    box-shadow: 0 0 40px var(--accent-glow),0 20px 50px rgba(0,0,0,.55);
+    backdrop-filter: blur(10px);
+}
+.card {
+    padding: 40px 28px 28px;
+    text-align: center;
+}
+.profile {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    object-fit: cover;
+    box-shadow: 0 0 18px var(--accent-glow);
+}
+h1 {
+    font-size: 2.2em;
+    margin: 16px 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: white;
+}
+.tagline {
+    margin: 0;
+    font-family: Consolas,monospace;
+    color: var(--accent);
+}
+.stars-total {
+    margin: 14px 0 0;
+    font-family: Consolas,monospace;
+    font-size: .85em;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+}
+.stars-total b {
+    color: white;
+}
+.links {
+    margin: 22px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+.links a {
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: .86em;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.15);
+    background: rgba(255,255,255,.04);
+    transition: .2s ease;
+}
+.links a:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: rgba(162,89,255,.15);
+}
+.icon {
+    width: 15px;
+    height: 15px;
+    filter: brightness(0);
+}
+.spotify {
+    margin-top: 22px;
+}
+.spotify iframe {
+    width: 100%;
+    border-radius: 12px;
+    border: 0;
+}
+.panel {
+    padding: 22px 22px 8px;
+}
+.panel h2 {
+    margin: 0 0 14px;
+    font-size: .78em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 650;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.project {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4px 12px;
+    text-decoration: none;
+    color: inherit;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(162,89,255,.22);
+    background: rgba(0,0,0,.28);
+    transition: .2s ease;
+}
+.project:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+.project strong {
+    font-size: .98em;
+}
+.project span {
+    grid-column: 1;
+    color: var(--text-dim);
+    font-size: .82em;
+}
+.star {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    align-self: center;
+    font-family: Consolas,monospace;
+    font-size: .85em;
+    color: white;
+    border: 1px solid rgba(162,89,255,.45);
+    border-radius: 999px;
+    padding: 4px 10px;
+}
+.terminal-toggle {
+    grid-column: 1 / -1;
+    justify-self: start;
+    padding: 8px 11px;
+    background: #0c0912;
+    border: 1px solid rgba(162,89,255,.3);
+    border-radius: 6px;
+    color: #c9a6f5;
+    cursor: pointer;
+    font: 12px Consolas,monospace;
+}
+.terminal-toggle:hover {
+    border-color: var(--accent);
+}
+.terminal {
+    grid-column: 1 / -1;
+    background: rgba(8,8,12,.96);
+    border: 1px solid rgba(162,89,255,.22);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Consolas,monospace;
+}
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background: rgba(255,255,255,.025);
+    border-bottom: 1px solid rgba(162,89,255,.12);
+}
+.terminal-title {
+    color: #c9a6f5;
+    font-size: 12px;
+}
+.terminal-status {
+    color: #a99bb8;
+    font-size: 11px;
+}
+.terminal-body {
+    padding: 12px 14px;
+    min-height: 90px;
+    max-height: 240px;
+    overflow-y: auto;
+    font-size: 12px;
+    line-height: 1.65;
+    color: #e8dfff;
+}
+.terminal-line {
+    margin-bottom: 5px;
+    overflow-wrap: anywhere;
+}
+.terminal-purple {
+    color: #b36aff;
+}
+.terminal-green {
+    color: #9cffb0;
+}
+.terminal-dim {
+    color: #9384a8;
+}
+.terminal-project {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(162,89,255,.12);
+}
+.terminal-project a {
+    color: #c89aff;
+    text-decoration: none;
+}
+.terminal-project a:hover {
+    color: white;
+}
+.terminal-input-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: rgba(5,4,9,.7);
+    border-top: 1px solid rgba(162,89,255,.18);
+}
+.terminal-prompt {
+    color: #b36aff;
+    white-space: nowrap;
+}
+.terminal-input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-family: Consolas,monospace;
+    font-size: 13px;
+}
+.terminal-input::placeholder {
+    color: #665777;
+}
+.terminal[hidden] {
+    display: none;
+}
+@media(max-width:760px) {
+    .wrap {
+        grid-template-columns: 1fr;
+    }
+    .terminal {
+        grid-column: 1;
+    }
+    h1 {
+        font-size: 1.9em;
+        letter-spacing: 4px;
+    }
+}
+</style>
 </head>
-
 <body>
 <div class="wrap">
-
     <main class="card">
         <img src="icon.jpg" class="profile" alt="ovax">
-
         <h1>ovax</h1>
         <p class="tagline">pentest & dev</p>
-
         <p class="stars-total">
             <b id="total">220</b> stars on github
         </p>
-
         <ul class="links">
-            <li><a href="https://github.com/banaxou" target="_blank" rel="noopener noreferrer"><img src="github.png" class="icon" alt="">GitHub</a></li>
-            <li><a href="https://instagram.com/banaxou" target="_blank" rel="noopener noreferrer"><img src="instagram.png" class="icon" alt="">Instagram</a></li>
-            <li><a href="https://discord.gg/nM69ttf5FQ" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/discord/000000" class="icon" alt="">Discord</a></li>
-            <li><a href="https://tryhackme.com/p/ovaxou" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/tryhackme/000000" class="icon" alt="">TryHackMe</a></li>
-            <li><a href="https://app.hackthebox.com/profile/overview" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/hackthebox/000000" class="icon" alt="">Hack The Box</a></li>
-            <li><a href="https://etherscan.io/address/0x4cc818bc2C4291CEa8117D9F8D8417EE054fEA58" target="_blank" rel="noopener noreferrer"><img src="ethereum.png" class="icon" alt="">ETH</a></li>
-            <li><a href="https://solscan.io/account/BVMkqwkMjtTNmD5spKayhYeb6JUfmReGxGaD4kcetXp2" target="_blank" rel="noopener noreferrer"><img src="sol.png" class="icon" alt="">SOL</a></li>
+            <li>
+                <a href="https://github.com/banaxou" target="_blank" rel="noopener noreferrer">
+                    <img src="github.png" class="icon" alt="">
+                    GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/banaxou" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram.png" class="icon" alt="">
+                    Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://discord.gg/nM69ttf5FQ" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/discord/000000" class="icon" alt="">
+                    Discord
+                </a>
+            </li>
+            <li>
+                <a href="https://tryhackme.com/p/ovaxou" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/tryhackme/000000" class="icon" alt="">
+                    TryHackMe
+                </a>
+            </li>
+            <li>
+                <a href="https://app.hackthebox.com/profile/overview" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/hackthebox/000000" class="icon" alt="">
+                    Hack The Box
+                </a>
+            </li>
+            <li>
+                <a href="https://etherscan.io/address/0x4cc818bc2C4291CEa8117D9F8D8417EE054fEA58" target="_blank" rel="noopener noreferrer">
+                    <img src="ethereum.png" class="icon" alt="">
+                    ETH
+                </a>
+            </li>
+            <li>
+                <a href="https://solscan.io/account/BVMkqwkMjtTNmD5spKayhYeb6JUfmReGxGaD4kcetXp2" target="_blank" rel="noopener noreferrer">
+                    <img src="sol.png" class="icon" alt="">
+                    SOL
+                </a>
+            </li>
         </ul>
-
         <div class="spotify">
             <iframe
                 src="https://open.spotify.com/embed/track/1EqlmS4lCRgJWXTKzAnWcu?utm_source=generator&theme=0"
                 height="152"
-                title="Lecteur Spotify"
+                title="Spotify player"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy">
             </iframe>
         </div>
     </main>
-
     <section class="panel">
-        <h2>projects</h2>
-
-        <div class="projects" id="projects">
-
+        <h2>Projects</h2>
+        <div class="projects">
             <a class="project" href="https://github.com/banaxou/hostagram" target="_blank" rel="noopener noreferrer">
                 <strong>hostagram</strong>
                 <span>osint instagram</span>
                 <em class="star" data-repo="hostagram">★ 148</em>
             </a>
-
             <a class="project" href="https://github.com/banaxou/dark-sherlock" target="_blank" rel="noopener noreferrer">
                 <strong>dark-sherlock</strong>
                 <span>csint username</span>
                 <em class="star" data-repo="dark-sherlock">★ 53</em>
             </a>
-
             <a class="project" href="https://github.com/banaxou/GhubScan" target="_blank" rel="noopener noreferrer">
                 <strong>GhubScan</strong>
                 <span>osint user github</span>
                 <em class="star" data-repo="GhubScan">★ 11</em>
             </a>
-
             <a class="project" href="https://github.com/banaxou/infonyx" target="_blank" rel="noopener noreferrer">
                 <strong>infonyx</strong>
                 <span>ip mail numéro</span>
                 <em class="star" data-repo="infonyx">★ 6</em>
             </a>
-
         </div>
     </section>
+    <button class="terminal-toggle" id="terminal-toggle" type="button">
+        Show terminal
+    </button>
+    <section class="terminal" id="terminal" hidden>
+        <div class="terminal-header">
+            <span class="terminal-title">Terminal</span>
+            <span class="terminal-status">Ready</span>
+        </div>
+        <div class="terminal-body" id="terminal-output">
+            <div class="terminal-line terminal-dim">
+                Type 'help' to see available commands.
+            </div>
+        </div>
+        <form class="terminal-input-line" id="terminal-form">
+            <label class="terminal-prompt" for="terminal-input">
+                user:
+            </label>
+            <input
+                type="text"
+                id="terminal-input"
+                class="terminal-input"
+                placeholder="Enter a command..."
+                autocomplete="off"
+                spellcheck="false"
+            >
+        </form>
+    </section>
 </div>
-
 <script>
 fetch("https://api.github.com/users/banaxou/repos?per_page=100")
-    .then(function (r) {
-        if (!r.ok) throw new Error("GitHub API error");
-        return r.json();
+    .then(response => {
+        if (!response.ok) throw new Error("GitHub API error");
+        return response.json();
     })
-    .then(function (repos) {
+    .then(repos => {
         if (!Array.isArray(repos)) return;
-
-        var map = {};
-        var total = 0;
-
-        repos.forEach(function (repo) {
-            map[repo.name] = repo.stargazers_count || 0;
+        let total = 0;
+        const map = {};
+        repos.forEach(repo => {
+            map[repo.name.toLowerCase()] = repo.stargazers_count || 0;
             total += repo.stargazers_count || 0;
         });
-
         document.getElementById("total").textContent = total;
-
-        document.querySelectorAll(".star").forEach(function (el) {
-            var n = map[el.dataset.repo];
-
-            if (typeof n === "number") {
-                el.textContent = "★ " + n;
+        document.querySelectorAll(".star").forEach(el => {
+            const stars = map[el.dataset.repo.toLowerCase()];
+            if (typeof stars === "number") {
+                el.textContent = "★ " + stars;
             }
         });
     })
-    .catch(function (error) {
-        console.error("Impossible de récupérer les stars :", error);
-    });
-</script>
+    .catch(error => console.error(error));
 
+const input = document.getElementById("terminal-input");
+const output = document.getElementById("terminal-output");
+const form = document.getElementById("terminal-form");
+const terminal = document.getElementById("terminal");
+const toggle = document.getElementById("terminal-toggle");
+
+let history = [];
+let historyIndex = 0;
+
+toggle.addEventListener("click", () => {
+    terminal.hidden = !terminal.hidden;
+    toggle.textContent = terminal.hidden
+        ? "Show terminal"
+        : "Hide terminal";
+    if (!terminal.hidden) {
+        input.focus();
+    }
+});
+
+function print(text, color = "") {
+    const line = document.createElement("div");
+    line.className = "terminal-line " + color;
+    line.textContent = text;
+    output.appendChild(line);
+    output.scrollTop = output.scrollHeight;
+}
+
+function showProject(repo) {
+    const div = document.createElement("div");
+    div.className = "terminal-project";
+    const link = document.createElement("a");
+    link.href = "https://github.com/banaxou/" + encodeURIComponent(repo.name);
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = repo.name;
+    const stars = document.createElement("span");
+    stars.className = "terminal-dim";
+    stars.textContent = "Stars: " + repo.stargazers_count;
+    div.append(link, stars);
+    output.appendChild(div);
+}
+
+async function infonyx(args) {
+    const [module, value] = args;
+
+    if (!module || module === "help") {
+        print("INFONYX MODULES", "terminal-green");
+        print("infonyx ip <address>   - IP information");
+        return;
+    }
+
+    if (module === "ip") {
+        if (!value) {
+            print("Usage: infonyx ip <address>");
+            return;
+        }
+
+        if (!/^[a-zA-Z0-9.:-]{1,100}$/.test(value)) {
+            print("Invalid address.");
+            return;
+        }
+
+        print("Requesting IP information...", "terminal-dim");
+
+        try {
+            const response = await fetch(
+                "https://ipinfo.io/" + encodeURIComponent(value) + "/json"
+            );
+
+            if (!response.ok) {
+                throw new Error("API error: " + response.status);
+            }
+
+            const data = await response.json();
+
+            print("INFONYX / IP INFO", "terminal-green");
+
+            const fields = [
+                ["IP", data.ip],
+                ["Hostname", data.hostname],
+                ["City", data.city],
+                ["Region", data.region],
+                ["Location", data.loc],
+                ["Country", data.country],
+                ["Postal", data.postal],
+                ["ISP", data.org],
+                ["Timezone", data.timezone]
+            ];
+
+            fields.forEach(([name, value]) => {
+                print(name.padEnd(15) + ": " + (value || "Not found"));
+            });
+
+            print("Source: ipinfo.io", "terminal-dim");
+        } catch (error) {
+            print("Infonyx error: " + error.message);
+        }
+
+        return;
+    }
+
+    print("Usage: infonyx ip <address>");
+}
+
+async function execute(command) {
+    const parts = command.trim().split(/\s+/);
+    const action = (parts.shift() || "").toLowerCase();
+
+    if (!action) return;
+
+    print("user: " + command, "terminal-purple");
+
+    switch (action) {
+        case "help":
+            print("Available commands:", "terminal-green");
+            print("ls                  List GitHub repositories");
+            print("whoami              Display username");
+            print("github              Open GitHub profile");
+            print("infonyx help        Infonyx modules");
+            print("infonyx ip <IP>     IP information");
+            print("clear               Clear terminal");
+            break;
+
+        case "ls":
+            print("Fetching repositories...", "terminal-dim");
+
+            try {
+                const response = await fetch(
+                    "https://api.github.com/users/banaxou/repos?per_page=100"
+                );
+
+                if (!response.ok) {
+                    throw new Error("GitHub API error");
+                }
+
+                const repos = await response.json();
+
+                if (!Array.isArray(repos)) {
+                    throw new Error("Invalid GitHub response");
+                }
+
+                repos.sort((a, b) =>
+                    b.stargazers_count - a.stargazers_count
+                );
+
+                print("Repositories: " + repos.length, "terminal-green");
+                repos.forEach(showProject);
+            } catch (error) {
+                print("Error: " + error.message);
+            }
+
+            break;
+
+        case "whoami":
+            print("Username: ovax");
+            break;
+
+        case "github":
+            window.open(
+                "https://github.com/banaxou",
+                "_blank",
+                "noopener"
+            );
+            break;
+
+        case "infonyx":
+            await infonyx(parts);
+            break;
+
+        case "clear":
+            output.replaceChildren();
+            break;
+
+        default:
+            print("Command not found: " + action);
+            print("Type 'help' for available commands.", "terminal-dim");
+    }
+}
+
+form.addEventListener("submit", async event => {
+    event.preventDefault();
+
+    const command = input.value.trim();
+
+    if (!command) return;
+
+    history.push(command);
+    historyIndex = history.length;
+
+    input.value = "";
+    input.disabled = true;
+
+    try {
+        await execute(command);
+    } finally {
+        input.disabled = false;
+        input.focus();
+    }
+});
+
+input.addEventListener("keydown", event => {
+    if (event.key === "ArrowUp") {
+        event.preventDefault();
+
+        if (historyIndex > 0) {
+            historyIndex--;
+            input.value = history[historyIndex];
+        }
+    }
+
+    if (event.key === "ArrowDown") {
+        event.preventDefault();
+
+        if (historyIndex < history.length - 1) {
+            historyIndex++;
+            input.value = history[historyIndex];
+        } else {
+            historyIndex = history.length;
+            input.value = "";
+        }
+    }
+});
+</script>
 </body>
 </html>
